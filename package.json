@@ -34,7 +34,7 @@
     "@types/express": "~4.0.34",
     "bluebird": "^3.5.0",
     "lodash": "^4.16.0",
-    "validator": "~7.0.0"
+    "validator": "~9.4.1"
   },
   "devDependencies": {
     "body-parser": "1.12.3",
