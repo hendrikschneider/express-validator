@@ -24,7 +24,9 @@
     "test": "nyc mocha && tsc",
     "lint": "eslint lib test",
     "travis-build": "npm test && npm run lint",
-    "report-coverage": "cat coverage/lcov.info | coveralls"
+    "report-coverage": "cat coverage/lcov.info | coveralls",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": ">= 0.10"
@@ -34,7 +36,8 @@
     "@types/express": "~4.0.34",
     "bluebird": "^3.5.0",
     "lodash": "^4.16.0",
-    "validator": "~7.0.0"
+    "validator": "~7.0.0",
+    "snyk": "^1.192.3"
   },
   "devDependencies": {
     "body-parser": "1.12.3",
@@ -56,5 +59,6 @@
     "sanitize",
     "sanitization",
     "xss"
-  ]
+  ],
+  "snyk": true
 }
